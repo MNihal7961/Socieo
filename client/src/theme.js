@@ -31,10 +31,10 @@ export const colorTokens = {
 // mui theme settings
 export const themeSettings = (mode) => {
     return {
-        pallete: {
+        palette: {
             mode: mode,
             ...(mode === "dark") ? {
-                //pallet value for dark mode 
+                // palette values for dark mode 
                 primary: {
                     dark: colorTokens.primary[200],
                     main: colorTokens.primary[500],
@@ -53,7 +53,7 @@ export const themeSettings = (mode) => {
                 }
             }
                 : {
-                    //pallet value for light mode 
+                    // palette values for light mode 
                     primary: {
                         dark: colorTokens.primary[700],
                         main: colorTokens.primary[500],
@@ -79,10 +79,6 @@ export const themeSettings = (mode) => {
                 fontFamily: ["Rubik", "sans-serif"].join(","),
                 fontSize: 40,
             },
-            h1: {
-                fontFamily: ["Rubik", "sans-serif"].join(","),
-                fontSize: 40,
-            },
             h2: {
                 fontFamily: ["Rubik", "sans-serif"].join(","),
                 fontSize: 32,
@@ -104,5 +100,5 @@ export const themeSettings = (mode) => {
                 fontSize: 14,
             },
         }
-    }
-}
+    };
+};
